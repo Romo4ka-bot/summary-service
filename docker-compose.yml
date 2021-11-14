@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  app:
+    build:
+      context: .
+    container_name: app
+    network_mode: "host"
+    environment:
+      - MONGODB_URI=mongodb+srv://roman-mongo:mScgvPHNQwVPt6lG@cluster0.r4ocr.mongodb.net/summary_service?retryWrites\=true&w\=majority
